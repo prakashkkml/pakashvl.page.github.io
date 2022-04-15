@@ -2,13 +2,10 @@
 
 DESCRIPTION:
 
-Prakash is a modern, stylish, free personal website template designed for creative individuals 
-and professionals. It is the perfect template if you wish to build an online presence and create 
-a strong first impression on all your site visitors. Prakash will help you craft a personal 
-professional website wherein you can showcase your works, talents, and present yourself on the 
-web in the best possible light. On top of that, the template is versatile and easy to customize 
-so with some modifications and a bit of creativity you even use it as a portfolio site for 
-digital studios or a landing page for your projects.
+CEEVEE is a clean, modern, fully responsive site template designed for online resume and portfolio. 
+With this template, you can easily introduce yourself and showcase your works to future clients 
+and employers. Also, it is flexible and easy to customize so you even use this template as 
+a creative, business or portfolio site for your company.
 
 ==================================================================================================
 
@@ -72,7 +69,7 @@ Also, keep your Paypal receipt as proof of payment and your good to go.
 
 SUPPORT:
     
-Since Prakash is distributed for free, support is not offered. Prakash is coded according 
+Since CEEVEE is distributed for free, support is not offered. CEEVEE is coded according 
 to current web standards and we did our best to make the template easy to use and modify.
 If you have minimum web development experience, you can easily modify the template. 
 However, If you're still new to HTML and CSS, I suggest that you visit the 
@@ -107,19 +104,20 @@ SOURCES AND CREDITS:
 I've used the following resources as listed.
 
 Fonts:
- - Public Sans Font (https://fonts.google.com/specimen/Public+Sans)
- - DM Serif Display (https://fonts.google.com/specimen/DM+Serif+Display)
+ - Inter Font (https://fonts.google.com/specimen/Inter)
+ - IBM Plex Serif Font (https://fonts.google.com/specimen/IBM+Plex+Serif)
 
 Icons:
- - Iconmonstr (https://iconmonstr.com/)
+ - Boxicons (https://boxicons.com/)
+ - FontAwesome (https://fontawesome.com/)
 
 Stock Photos and Graphics:
  - Unsplash.com (https://unsplash.com/)
  
 Javascript Files:
- - Anime.js (https://animejs.com/)
+ - Rellax.js (https://dixonandmoe.com/rellax/)
  - Swiper (https://swiperjs.com/)
- - MoveTo.js (https://github.com/hsnaydd/moveTo)
+ - Jump.js (https://github.com/callmecavs/jump.js)
  - Prism.js (https://prismjs.com/)
  - Basic Lightbox (https://basiclightbox.electerious.com/)
  - MailtoUI (https://mailtoui.com/)
