@@ -51,10 +51,10 @@
  * # site header
  *      ## header nav
  *      ## mobile menu toggle 
- * # hero
- *      ## hero content
- *      ## hero social
- *      ## hero scrolldown
+ * # home
+ *      ## home content
+ *      ## home social
+ *      ## home scrolldown
  *      ## animate intro content
  * # resume 
  *      ## resume block
@@ -3426,10 +3426,10 @@ input[type="button"].btn--primary:focus {
 
 
 /* ===================================================================
- * # hero
+ * # home
  *
  * ------------------------------------------------------------------- */
-.s-hero {
+.s-home {
     background-color: var(--color-gray-18);
     width: 100%;
     height: 100vh;
@@ -3438,7 +3438,7 @@ input[type="button"].btn--primary:focus {
     position: relative;
 }
 
-.s-hero__bg {
+.s-home__bg {
     display: block;
     position: absolute;
     top: 0;
@@ -3453,7 +3453,7 @@ input[type="button"].btn--primary:focus {
     background-size: cover;
 }
 
-.s-hero__bg::before {
+.s-home__bg::before {
     display: block;
     content: "";
     position: absolute;
@@ -3467,7 +3467,7 @@ input[type="button"].btn--primary:focus {
     opacity: .5;
 }
 
-.s-hero__bg::after {
+.s-home__bg::after {
     display: block;
     content: "";
     position: absolute;
@@ -3477,14 +3477,14 @@ input[type="button"].btn--primary:focus {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(360deg, black 15%, rgba(0, 0, 0, 0) 100%);
-    opacity: .4;
+    background: linear-gradient(360deg, black 20%, rgba(0, 0, 0, 0) 100%);
+    opacity: 10;
 }
 
 /* ------------------------------------------------------------------- 
- * ## hero content
+ * ## home content
  * ------------------------------------------------------------------- */
-.s-hero__content {
+.s-home__content {
     height: 100%;
     -ms-flex-align: center;
     -webkit-box-align: center;
@@ -3495,7 +3495,7 @@ input[type="button"].btn--primary:focus {
     position: relative;
 }
 
-.s-hero__content h1 {
+.s-home__content h1 {
     font-size: 9.8rem;
     font-weight: 600;
     letter-spacing: -.04em;
@@ -3505,7 +3505,7 @@ input[type="button"].btn--primary:focus {
     margin-bottom: 0;
 }
 
-.s-hero__content h3 {
+.s-home__content h3 {
     font-family: var(--font-2);
     font-weight: 400;
     font-size: 2.4rem;
@@ -3519,11 +3519,11 @@ input[type="button"].btn--primary:focus {
     position: relative;
 }
 
-.s-hero__content h3 span, .s-hero__content h3 a {
+.s-home__content h3 span, .s-home__content h3 a {
     color: white;
 }
 
-.s-hero__content h3::after {
+.s-home__content h3::after {
     display: block;
     content: "";
     text-align: center;
@@ -3538,9 +3538,9 @@ input[type="button"].btn--primary:focus {
 }
 
 /* ------------------------------------------------------------------- 
- * ## hero social
+ * ## home social
  * ------------------------------------------------------------------- */
-.s-hero__content-social {
+.s-home__content-social {
     display: -ms-inline-flexbox;
     display: -webkit-inline-box;
     display: inline-flex;
@@ -3553,24 +3553,24 @@ input[type="button"].btn--primary:focus {
     margin-top: var(--vspace-0_5);
 }
 
-.s-hero__content-social a {
+.s-home__content-social a {
     color: white;
     margin-right: var(--vspace-0_75);
 }
 
-.s-hero__content-social a:hover, 
-.s-hero__content-social a:focus {
+.s-home__content-social a:hover, 
+.s-home__content-social a:focus {
     color: var(--color-2-light);
 }
 
-.s-hero__content-social a:last-child {
+.s-home__content-social a:last-child {
     margin-right: 0;
 }
 
 /* ------------------------------------------------------------------- 
- * ## hero scrolldown
+ * ## home scrolldown
  * ------------------------------------------------------------------- */
-.s-hero__scroll {
+.s-home__scroll {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     position: absolute;
@@ -3578,7 +3578,7 @@ input[type="button"].btn--primary:focus {
     bottom: var(--vspace-1_25);
 }
 
-.s-hero__scroll-link {
+.s-home__scroll-link {
     display: -ms-flexbox;
     display: -webkit-box;
     display: flex;
@@ -3595,12 +3595,12 @@ input[type="button"].btn--primary:focus {
     color: white;
 }
 
-.s-hero__scroll-link:hover .scroll-text::after, 
-.s-hero__scroll-link:focus .scroll-text::after {
+.s-home__scroll-link:hover .scroll-text::after, 
+.s-home__scroll-link:focus .scroll-text::after {
     width: 100%;
 }
 
-.s-hero__scroll-link .scroll-arrow {
+.s-home__scroll-link .scroll-arrow {
     display: block;
     width: var(--vspace-1);
     height: var(--vspace-1);
@@ -3610,7 +3610,7 @@ input[type="button"].btn--primary:focus {
     position: relative;
 }
 
-.s-hero__scroll-link .scroll-arrow svg {
+.s-home__scroll-link .scroll-arrow svg {
     height: 2rem;
     width: 2rem;
     -webkit-transform: translate3d(-50%, -50%, 0);
@@ -3620,15 +3620,15 @@ input[type="button"].btn--primary:focus {
     top: 50%;
 }
 
-.s-hero__scroll-link .scroll-arrow svg path {
+.s-home__scroll-link .scroll-arrow svg path {
     fill: white;
 }
 
-.s-hero__scroll-link .scroll-text {
+.s-home__scroll-link .scroll-text {
     position: relative;
 }
 
-.s-hero__scroll-link .scroll-text::after {
+.s-home__scroll-link .scroll-text::after {
     content: "";
     display: block;
     width: 0;
@@ -3642,22 +3642,22 @@ input[type="button"].btn--primary:focus {
 }
 
 /* -------------------------------------------------------------------
- * ## animate hero content
+ * ## animate home content
  * ------------------------------------------------------------------- */
 .ss-preload .s-header, 
-.ss-preload .s-hero {
+.ss-preload .s-home {
     visibility: hidden;
     opacity: 0;
 }
-.ss-preload .s-hero__content {
+.ss-preload .s-home__content {
     opacity: 0;
 }
 .ss-loaded .s-header,
-.ss-loaded .s-hero {
+.ss-loaded .s-home {
     visibility: visible;
     opacity: 1;
 }
-.ss-loaded .s-hero__content {
+.ss-loaded .s-home__content {
     -webkit-animation-name: fadeInUp;
     animation-name: fadeInUp;
     -webkit-animation-duration: 3s;
@@ -3670,101 +3670,101 @@ input[type="button"].btn--primary:focus {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * hero
+ * home
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1600px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 9.4rem;
     }
-    .s-hero__content h3 {
+    .s-home__content h3 {
         font-size: 2.2rem;
     }
 }
 
 @media screen and (max-width: 1400px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 8.8rem;
     }
-    .s-hero__content h3 {
+    .s-home__content h3 {
         font-size: 2rem;
         max-width: 680px;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 8.4rem;
     }
-    .s-hero__content h3 {
+    .s-home__content h3 {
         font-size: 1.9rem;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 7.6rem;
     }
-    .s-hero__content h3 {
+    .s-home__content h3 {
         font-size: 1.8rem;
     }
-    .s-hero__content-social {
+    .s-home__content-social {
         font-size: 2.4rem;
     }
 }
 
 @media screen and (max-width: 800px) {
-    .s-hero__content {
+    .s-home__content {
         padding-top: 12vh;
     }
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 6.8rem;
     }
-    .s-hero__content h3 {
+    .s-home__content h3 {
         max-width: 600px;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 6.2rem;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 5.8rem;
     }
-    .s-hero__content-social {
+    .s-home__content-social {
         font-size: 2.2rem;
     }
 }
 
 @media screen and (max-width: 500px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 5.2rem;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .s-hero__content h1 {
+    .s-home__content h1 {
         font-size: 4.8rem;
     }
-    .s-hero__content h3 {
+    .s-home__content h3 {
         font-size: 1.7rem;
     }
-    .s-hero__content h3::after {
+    .s-home__content h3::after {
         width: 240px;
     }
-    .s-hero__content-social {
+    .s-home__content-social {
         font-size: 2rem;
     }
-    .s-hero__content-social a {
+    .s-home__content-social a {
         margin-right: var(--vspace-0_5);
     }
 }
 
 @media screen and (max-width: 360px) {
-    .s-hero__scroll-link .scroll-arrow {
+    .s-home__scroll-link .scroll-arrow {
         display: none;
     }
 }
@@ -4210,179 +4210,6 @@ input[type="button"].btn--primary:focus {
     .s-cta .section-desc {
         font-size: var(--text-lg);
         line-height: var(--vspace-1);
-    }
-}
-
-
-/* ===================================================================
- * # testimonials
- *
- * ------------------------------------------------------------------- */
-.s-testimonials {
-    padding-top: var(--vspace-5);
-    padding-bottom: var(--vspace-3_5);
-    color: rgba(255, 255, 255, 0.8);
-    background-color: var(--color-gray-19);
-    overflow: hidden;
-    position: relative;
-}
-
-.s-testimonials__bg {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/testimonials-bg-3000.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.s-testimonials__bg::before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--color-gray-19);
-    opacity: .8;
-}
-
-.s-testimonials h3 {
-    margin-top: 0;
-    color: white;
-}
-
-.s-testimonials__header, .s-testimonials__content {
-    position: relative;
-}
-
-.s-testimonials__header {
-    text-align: center;
-    margin-bottom: var(--vspace-2);
-}
-
-.s-testimonials__content>.column:first-child {
-    min-height: 0;
-    min-width: 0;
-}
-
-/* ------------------------------------------------------------------- 
- * ## swiper style overrides
- * ------------------------------------------------------------------- */
-.s-testimonials .swiper-container {
-    padding-bottom: var(--vspace-2_5);
-}
-
-.s-testimonials .swiper-container-horizontal .swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0 9px;
-}
-
-.s-testimonials .swiper-pagination-bullet {
-    width: 6px;
-    height: 6px;
-    background: white;
-    opacity: 0.4;
-}
-
-.s-testimonials .swiper-pagination-bullet-active {
-    background: var(--color-1);
-    opacity: 1;
-}
-
-/* ------------------------------------------------------------------- 
- * ## testimonial slider 
- * ------------------------------------------------------------------- */
-.testimonial-slider {
-    position: relative;
-}
-
-.testimonial-slider p {
-    font-weight: 400;
-    font-size: 1.7rem;
-    line-height: var(--vspace-1);
-}
-
-.testimonial-slider__slide {
-    position: relative;
-}
-
-.testimonial-slider__author {
-    display: inline-block;
-    min-height: var(--vspace-2);
-    margin-bottom: var(--vspace-0_5);
-    padding-left: 8.8rem;
-    position: relative;
-}
-
-.testimonial-slider__avatar {
-    width: var(--vspace-2);
-    height: var(--vspace-2);
-    border-radius: 100%;
-    outline: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.testimonial-slider__cite {
-    display: block;
-}
-
-.testimonial-slider__cite strong, 
-.testimonial-slider__cite span {
-    font-style: normal;
-}
-
-.testimonial-slider__cite strong {
-    font-size: calc(var(--text-size) * 0.944);
-    line-height: var(--vspace-0_5);
-    color: white;
-}
-
-.testimonial-slider__cite span {
-    display: block;
-    font-size: calc(var(--text-size) * 0.778);
-    font-weight: 300;
-    line-height: var(--vspace-0_5);
-    color: rgba(255, 255, 255, 0.6);
-}
-
-/* ------------------------------------------------------------------- 
- * responsive:
- * testimonials
- * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
-    .testimonial-slider__slide {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .testimonial-slider__author {
-        padding-left: 6.8rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .testimonial-slider__author {
-        padding-left: 0;
-        margin-bottom: var(--vspace-0_5);
-        min-height: 0;
-        text-align: center;
-    }
-    .testimonial-slider__avatar {
-        display: inline-block !important;
-        margin: 0;
-        position: static;
     }
 }
 
