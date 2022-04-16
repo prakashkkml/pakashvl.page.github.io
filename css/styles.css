@@ -3519,6 +3519,43 @@ input[type="button"].btn--primary:focus {
     position: relative;
 }
 
+.s-home__content h5 {
+    color: #ff4545;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 2.3rem;
+    line-height: 1.565;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+
+.s-home__content .intro-position {
+    font-family: "lora-regular", serif;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 6px rgb(0 0 0 / 20%);
+}
+
+.s-home__content .intro-position span:first-child::before {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.s-home__content .intro-position span::after {
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 8px 0 14px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .s-home__content h3 span, .s-home__content h3 a {
     color: white;
 }
