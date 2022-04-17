@@ -724,6 +724,7 @@ input[type="password"], textarea {
     flex-flow: row wrap;
 }
 
+
 .row .row {
     width: auto;
     max-width: none;
@@ -4283,6 +4284,10 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .contact-infos .btn {
     margin-top: var(--vspace-0_75);
+}
+
+.contact-infos.margin-left-2 {
+    margin-left: calc(var(--gutter-lg) * -2);
 }
 
 .contact-block {
