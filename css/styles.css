@@ -3950,6 +3950,13 @@ input[type="button"].btn--primary:focus {
     margin-bottom: var(--vspace-0_25);
 }
 
+.resume-block__project_header {
+    font-family: var(--font-2);
+    font-size: calc(var(--text-size) * 1.1111);
+    /* margin-top: -.4rem;
+    margin-bottom: var(--vspace-0_75); */
+}
+
 .resume-block__header-meta {
     font-family: var(--font-2);
     font-size: calc(var(--text-size) * 1.1111);
