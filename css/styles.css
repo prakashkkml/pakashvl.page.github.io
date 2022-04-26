@@ -84,6 +84,7 @@
  * ## fonts
  * ------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap");
+@import url("micons/micons.css");
 :root {
     --font-1: "Inter", sans-serif;
     --font-2: "IBM Plex Serif", serif;
@@ -3999,6 +4000,58 @@ input[type="button"].btn--primary:focus {
     }
 }
 
+/* ===================================================================
+ * # services
+ *
+ * ------------------------------------------------------------------- */
+ .s-services {
+    background-color: var(--color-gray-1);
+    padding-top: calc(6 * var(--space));
+    padding-bottom: var(--vspace-5);
+}
+
+/* Style the counter service-items */
+.service-item {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+
+  /* Clear floats after the columns */
+  .s-services .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* .s-services .row {margin: 0 -5px;} */
+
+  .s-services .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+  /* Responsive columns */
+@media screen and (max-width: 600px) {
+    .s-services .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+.service-item .icon {
+    display: inline-block;
+    margin-bottom: 2.1rem;
+}
+
+.service-item .icon i {
+    font-size: 5.4rem;
+    color: #FF0077;
+}
 
 /* ===================================================================
  * # portfolio
