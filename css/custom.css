@@ -1,0 +1,33 @@
+/* =================================================================== 
+ *  Prakash's custom CSS
+ *  Template Ver. 2.0.0 
+ *  17-02-2024
+ *  ------------------------------------------------------------------
+ *
+ * =================================================================== */
+
+ .custom-leetcode-icon {
+    /* background-image: url('icons/leetcode.ico');
+    background-size: cover;
+    width: 24px; 
+    height: 24px;
+    display: inline-block; */
+    
+    content: "";
+    display: inline-block;
+    width: 24px; /* Adjust the width and height as needed */
+    height: 24px;
+    background-image: url('icons/leetcode.ico');
+    background-size: cover; /* or contain based on your preference */
+    filter: invert(100%); /* Invert the colors to change black to white */
+    transition: filter 0.3s ease; /* Adding a smooth transition effect */
+}
+
+/* .custom-leetcode-icon:hover::before {
+    background-color: var(--color-2-light);
+} */
+
+.custom-leetcode-icon:hover, 
+.custom-leetcode-icon:focus {
+    color: var(--color-2-light);
+}
